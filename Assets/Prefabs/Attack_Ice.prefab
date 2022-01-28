@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 928135760}
   - component: {fileID: 928135759}
   - component: {fileID: 8232863934384826179}
-  m_Layer: 0
+  - component: {fileID: 1290049034}
+  m_Layer: 9
   m_Name: Attack_Ice
-  m_TagString: Fire
+  m_TagString: Ice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 434997396171655635}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,9 +74,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.10588236, g: 0.32941177, b: 0.9725491, a: 1}
+  m_SortingOrder: 15
+  m_Sprite: {fileID: 3168005975933719325, guid: 2e1a5f814df434746a1f574eb3237e8f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -102,14 +103,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.22, y: 0.18}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.2212619, y: 0.18556938}
   m_EdgeRadius: 0
 --- !u!50 &928135759
 Rigidbody2D:
@@ -144,4 +145,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6193abf48c4093f40a704fd8c56af083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 3310476509740809764, guid: 6d669730c7dbf704ca6d8b89bfda0390, type: 3}
+  SFXAttack: {fileID: 6148514996122243173, guid: 31131d1974f42fa45a0017a43c6bead4, type: 3}
   speed: 400
+--- !u!95 &1290049034
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434997396171655635}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 88f28e33497f92c4eb6f8cd44b45826c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
